@@ -13,7 +13,16 @@
                     MinimumTrackColor="Bisque"
                     MaximumTrackColor="Aqua"
                     ValueChanged="Slider_ValueChanged"
-                    x:Name="sliderValue"/>
+                    x:Name="sliderRotation"/>
+
+            <Slider Minimum="0"
+                    Maximum="360"
+                    Margin="40"
+                    Value="0"
+                    MinimumTrackColor="Bisque"
+                    MaximumTrackColor="Aqua"
+                    ValueChanged="Slider_ValueChanged"
+                    x:Name="sliderRotation2"/>   
 
             <Label Text="To jest tekst"
                    HorizontalOptions="Center"

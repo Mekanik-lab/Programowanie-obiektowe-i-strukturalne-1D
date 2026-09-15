@@ -5,13 +5,12 @@
         public MainPage()
         {
             InitializeComponent();
-            labelRotation.Rotation = sliderValue.Value;
         }
 
         private void Slider_ValueChanged(object sender, ValueChangedEventArgs e)
         {
-            if(labelRotation is not null)
-                labelRotation.Rotation = sliderValue.Value;
+            if(sender is Slider slider && labelRotation is not null)
+                labelRotation.Rotation = slider.Value;
         }
     }
 }
