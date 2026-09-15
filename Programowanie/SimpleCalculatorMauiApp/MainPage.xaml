@@ -12,19 +12,25 @@
                    FontAttributes="Bold"
                    TextColor="Black"/>
 
-            <Entry FontSize="20"/>
+            <Entry FontSize="20"
+                   x:Name="firstNumberEntry"/>
 
             <Label Text="Podaj drugą liczbę:"
                    FontSize="20"
                    FontAttributes="Bold"
                    TextColor="Black"/>
 
-            <Entry FontSize="20"/>
+            <Entry FontSize="20"
+                   x:Name="secondNumberEntry"/>
 
             <Button Text="Oblicz"
                     BackgroundColor="black"
                     TextColor="White"
-                    FontSize="20"/>
+                    FontSize="20" 
+                    Clicked="Button_Clicked"/>
+
+            <Label x:Name="resultLabel"
+                   FontSize="20"/>
         </StackLayout>
     </ScrollView>
 

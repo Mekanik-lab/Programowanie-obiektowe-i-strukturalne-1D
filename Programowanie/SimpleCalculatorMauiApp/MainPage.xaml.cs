@@ -6,5 +6,18 @@
         {
             InitializeComponent();
         }
+
+        private void Button_Clicked(object? sender, EventArgs e)
+        {
+           if(int.TryParse(firstNumberEntry.Text, out int firstNumber)
+              && int.TryParse(secondNumberEntry.Text, out int secondNumber))
+            {
+                int result = firstNumber + secondNumber;
+                resultLabel.Text = "Wynik to: " + result;
+            } else
+            {
+                resultLabel.Text = "Podałeś błędne dane";
+            }
+        }
     }
 }
