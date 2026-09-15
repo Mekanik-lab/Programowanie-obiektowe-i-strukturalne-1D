@@ -9,7 +9,7 @@
 
         private void Slider_ValueChanged(object sender, ValueChangedEventArgs e)
         {
-            if(sender is Slider slider && labelRotation is not null)
+            if(sender is Slider slider && labelRotation is not null) 
                 labelRotation.Rotation = slider.Value;
         }
     }
